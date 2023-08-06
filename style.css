@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+margin: 0;
+    padding: 0;
+}
+
+.menubar li a{
+    text-transform: capitalize;
+    font-size: large;
+    margin: 8px;
+    border-radius: 5px;
+    transition: background-color 0.5s linear, color 0.5s linear ;
+}
+.menubar li a:hover{
+    color: rgb(247, 247, 252) !important;
+   background-color: rgb(237, 10, 2);
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+}
+button.button{
+  color: aliceblue;
+  background-color: #FF3081;
+  transition: scale 0.2s linear;
+}
+.col-6 h5{
+  color: #FF3081;
+}
+h1{
+  text-transform: uppercase;
+}
+.button:hover{
+    color: azure;
+    scale: 1.02;
+ 
+}
+.innercol{
+  border-radius: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 8px;
+  
+ 
+}
+
+.innercol:hover{
+  box-shadow: 4px 4px 5px 7px lightgray;
+  scale: 1.05;
+}
+
+.shoeSubCatagory strong,.bagCatagory strong{
+  display: block;
+}
+
+.shoeSubCatagory,.bagCatagory{
+  background-color: #FFFFFF;
+padding: 8px 0px;
+text-align: center;
+margin: 2rem 0.1rem;
+border-radius: 1rem;
+box-shadow: 4px 4px 5px 7px lightgray;
+transition: scale 0.2s linear;
+min-height: 507px;
+}
+
+.totalcardsection{
+  background-color: #F8F8F8;
+}
+.shoeSubCatagory img:hover,.bagCatagory img:hover{
+  scale: 1.02;
+}
+
+.innercol h3{
+  margin-left: 27px;
+}
+
+.innercol1{
+  background-image: linear-gradient(100deg,rgb(225, 130, 29),yellow);
+}
+.innercol2{
+  background-image: linear-gradient(100deg,rgb(206, 6, 112),crimson);
+}
+.innercol3{
+  background-image: linear-gradient(100deg,rgb(10, 41, 219),blue);
+}
+
+.animationimg img{
+  animation: ianimation 3s linear infinite alternate;
+
+}
+
+.animationimg img:hover{
+  animation-play-state: paused;
+}
+
+
+@keyframes ianimation{
+  0%{
+    scale: 1;
+  }
+  50%{
+    scale: 0.97;
+  }
+  100%{
+    scale: 1;
+
+  }
+}
+
+@media (min-width:992px) {
+  form{
+    width: 40%;
+  }
+ 
+
+
+}
+
+@media (max-width:518px) {
+ form{
+  width: 40%;
+ }
+
+ .shoeSubCatagory,.bagCatagory{
+  margin: 2rem 2rem;
+ }
+ .last{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+ }
+ .last button{
+  width: 50%;
+ }
+}
+
+@media (max-width:768px) {
+ 
+  .carousel-products-description{
+   max-height:90px;
+  overflow: auto;
+  }
+ 
+  
+   
+ }
+ 

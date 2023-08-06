@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panda Commerce</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img class="img-fluid" src="logo.png" alt="" srcset=""
+          /></a>
+
+          <form class="d-flex px-1">
+            <input
+              class="form-control rounded-pill"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <ul
+            class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse menubar"
+            id="navbarSupportedContent"
+          >
+            <li class="nav-item">
+              <a class="nav-link active px-1" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-1" href="#products">products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-1" href="#about">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-1" href="#contact">contact us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- carousel section start -->
+
+    <main class="container mt-5">
+      <div
+        style="background-color: #feeae9"
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="false"
+        data-pause="hover"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div
+                class="col-6 ps-auto ms-auto d-flex flex-column justify-content-center"
+              >
+                <h1>headphone</h1>
+                <p class="carousel-products-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                  explicabo voluptates praesentium dicta esse nisi ex eligendi
+                  molestias, .
+                </p>
+                <h5>$600</h5>
+                <div>
+                  <button class="button btn" type="button">Buy Now</button>
+                </div>
+              </div>
+              <div class="col-5 animationimg">
+                <img
+                 
+                  src="banner-images/headphone.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div
+                class="col-6 d-flex flex-column justify-content-center ps-auto ms-auto"
+              >
+                <h1>MI 42 Inch Tv</h1>
+                <p class="carousel-products-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus, minus?
+                </p>
+                <h5>$500</h5>
+                <div>
+                  <button class="button btn" type="button">Buy Now</button>
+                </div>
+              </div>
+              <div class="col-5 animationimg">
+                <img
+                  class="img-fluid"
+                  src="banner-images/tv.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div
+                class="col-6 d-flex flex-column justify-content-center h-auto ps-auto ms-auto"
+              >
+                <h1>xbox</h1>
+                <p class="carousel-products-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                  maxime laudantium ipsum dolor beatae quas doloribus quo
+                  cupiditate necessitatibus reiciendis ea, cum dolore quos!
+                  Totam accusamus ab quisquam cupiditate dolor.
+                </p>
+                <h5>$350</h5>
+                <div>
+                  <button class="button btn" type="button">Buy Now</button>
+                </div>
+              </div>
+              <div class="col-5 animationimg">
+                <img
+                  class="img-fluid"
+                  src="banner-images/xbox.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </main>
+
+<!-- carousel section done -->
+
+
+
+
+    <!-- catagories section start -->
+    <div class="container my-3">
+      <h3 my-3>Catagories</h3>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+          <div class="innercol innercol1">
+            <h3>Bag</h3>
+            <img src="categories/bag.png" alt="watch_images" />
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+          <div class="innercol innercol2">
+            <h3>Shoes</h3>
+            <img src="categories/shoes.png" alt="watch_images"></div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+          <div class="innercol innercol3"><h3>Watch</h3>
+          <img src="categories/watch.png" alt="watch_images"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- catagories section done -->
+<div class="totalcardsection mb-5">
+<!-- card one section start  -->
+
+<section class="container">
+<div class="d-flex justify-content-between m-3 ">
+
+  <h4>Shoes</h4>
+  <h6 style="color: rgb(247, 168, 11);">see all</h6>
+</div>
+
+<div class="cardSection">
+
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-12">
+
+
+      <div class="shoeSubCatagory">
+        <img class="img-fluid" src="shoes/shoe-1.png" alt="ShoesImageOpening">
+        <h5 class="mt-3 pt-3">Addidas Shoe</h5>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p><strong>$200</strong>
+        <button class="button btn" type="button">Buy Now</button>
+      </div>
+    </div>
+
+
+
+    <div class="col-lg-4 col-md-4 col-sm-11">
+      <div class="shoeSubCatagory">
+        <img class="img-fluid" src="shoes/shoe-2.png" alt="ShoesImageOpening">
+        <h5 class="mt-3 pt-3">Puma shoe</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p><strong>$200</strong>
+        <button class="button btn" type="button">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <div class="shoeSubCatagory">
+        <img class="img-fluid" src="shoes/shoe-3.png" alt="ShoesImageOpening">
+        <h5 class="mt-3 pt-3">Armani Shoe</h5>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p><strong>$200</strong>
+        <button class="button btn" type="button">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+</section>
+
+
+<!-- card one section end  -->
+
+<!-- card two section start  -->
+
+<section class="container">
+  <aside class="d-flex justify-content-between m-3">
+    <h4 >Bag
+    </h4>
+    <h6 style="color: rgb(247, 168, 11);">see all</h6>
+  </aside>
+
+
+
+  <div class="cardSection">
+    <div class="row">
+      <div class="col-md-4 col-lg-4 col-sm-12">
+        <div class="bagCatagory">
+          <img src="bags/bag-1.png" alt="bag Image Is Loading" class="img-fluid">
+            <h4 class="mt-2 pt-2">Ms. Bagmoti</h4>
+            <p>Made in zindegi na milega dobara</p><strong>$200</strong>
+            <button class="button btn">Buy Now</button>
+         
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4 col-sm-12">
+        <div class="bagCatagory">
+          <img src="bags/bag-2.png" alt="bag Image Is Loading" class="img-fluid">
+            <h4 class="mt-2 pt-2">Korean Bag</h4>
+            <p>This is new korean design bag</p><strong>$200</strong>
+            <button class="button btn">Buy Now</button>
+          
+        </div>
+      </div>
+
+
+      <div class="col-md-4 col-lg-4 col-sm-12">
+        <div class="bagCatagory">
+          <img src="bags/bag-3.png" alt="bag Image Is Loading" class="img-fluid">
+            <h4 class="">Bag 03</h4>
+            <p>Bag version 3 is update model.It is successor of Bag version one</p><strong>$200</strong>
+            <button class="button btn">Buy Now</button>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!-- card two section end  -->
+</div>
+<!-- totalcardsection end  -->
+
+
+<!-- footer section  -->
+
+<footer class="mt-5 mb-5">
+  <div style="min-height: 15rem; background-color: #FEEAE9;" class="container last d-flex flex-column align-items-center  justify-content-center ">
+    <h3>Lets In touch</h3>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <div class="last" >
+    <input style="border: none;" class="m-3 p-3 " type="text" placeholder="Type your email Here">
+    <button class="button btn" type="submit" >Submit</button>
+  </div>
+  </div>
+
+
+</footer>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
