@@ -58,12 +58,11 @@ h1{
 .shoeSubCatagory,.bagCatagory{
   background-color: #FFFFFF;
 padding: 8px 0px;
+margin: 8px 0px;
 text-align: center;
-margin: 2rem 0.1rem;
 border-radius: 1rem;
 box-shadow: 4px 4px 5px 7px lightgray;
 transition: scale 0.2s linear;
-min-height: 507px;
 }
 
 .totalcardsection{
